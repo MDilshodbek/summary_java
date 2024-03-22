@@ -75,18 +75,18 @@
 
 // var str = "Hello World! i just started programming";
 // var vowels = ["a", "e", "i", "o", "u"];
-// for (let i = 0; i < str.length; i++) {
-//   if (vowels.includes(str[i])) {
-//     str = str.replaceAll(str[i], "o");
+// for (let i = 0; i < vowels.length; i++) {
+//   if (str.includes(vowels[i])) {
+//     str = str.replaceAll(vowels[i], "o");
 //   }
 // }
 // console.log(str);
 
 // function test(str) {
 //   var vowels = ["a", "e", "i", "o", "u"];
-//   for (let i = 0; i < str.length; i++) {
-//     if (vowels.includes(str[i])) {
-//       str = str.replaceAll(str[i], "o");
+//   for (let i = 0; i < vowels.length; i++) {
+//     if (str.includes(vowels[i])) {
+//       str = str.replaceAll(vowels[i], "o");
 //     }
 //   }
 //   return str;
@@ -157,11 +157,9 @@
 
 // function getMenu(restaurantName) {
 //   if (restaurantName === restaurant.name) {
-//     let formattedMenu = "";
 //     restaurant.menu.forEach((value) => {
-//       formattedMenu += `${value.item}: $${value.price}\n`;
+//       console.log(`${value.item}: $${value.price}\n`);
 //     });
-//     return formattedMenu;
 //   }
 //   return "Restaurant not found.";
 // }
@@ -174,7 +172,7 @@
 
 // function getP() {
 //   for (let i = 0; i <= word.length; i++) {
-  //     let firstOne = i;
+//     let firstOne = i;
 //     let lastOne = word.length - 1 - i;
 //     if (word[firstOne] !== word[lastOne]) return false;
 //   }
@@ -193,18 +191,16 @@ var bank = {
     balance: 17000,
   },
 };
-console.log(bank.balance);
-console.log(Object.entries(bank));
 
-// var keys = Object.keys(bank);
+var keys = Object.keys(bank);
 
-// function account_balance(account) {
-//   for (let i = 0; i < keys.length; i++) {
-//     if (keys[i] === account) {
-//       console.log(
-//         `The current balance of ${account} is ${bank[keys[i]].balance}`
-//       );
-//     }
-//   }
-// }
-// account_balance("12345");
+function account_balance(account) {
+  for (let i = 0; i < keys.length; i++) {
+    if (keys[i] === account) {
+      console.log(
+        `The current balance of ${account} is ${bank[keys[i]].balance}`
+      );
+    }
+  }
+}
+account_balance("12345");
