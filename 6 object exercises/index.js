@@ -194,61 +194,60 @@
 
 // E6
 
-let library_store = {
-  "Atomic Habits": {
-    borrow_to: "",
-    borrow_count: 15,
-  },
-  "Zero to One": {
-    borrow_to: "",
-    borrow_count: 8,
-  },
-  "Rich Dad, Poor Dad": {
-    borrow_to: "",
-    borrow_count: 12,
-  },
-  "The Magic of Thinking Big": {
-    borrow_to: "",
-    borrow_count: 4,
-  },
-};
+// let library_store = {
+//   "Atomic Habits": {
+//     about: "Self Improvement",
+//     borrow_to: "",
+//     borrow_count: 15,
+//   },
+//   "Zero to One": {
+//     about: "Entrepreneurship",
+//     borrow_to: "",
+//     borrow_count: 8,
+//   },
+//   "Rich Dad, Poor Dad": {
+//     category: "business",
+//     borrow_to: "",
+//     borrow_count: 12,
+//   },
+//   "The Magic of Thinking Big": {
+//     category: "Phsychology",
+//     borrow_to: "",
+//     borrow_count: 4,
+//   },
+// };
 
-function library(operation) {
-  const found_book = library_store[operation.book_name];
+// function library(operation) {
+//   const found_book = library_store[operation.book_name];
 
-  if (operation.type === "borrow" && found_book === "undefined") {
-    console.log("Book not found");
-  } else if (operation.type === "borrow" && found_book.borrow_to !== "") {
-    console.log("Book already borrowed");
-  } else if (operation.type === "borrow") {
-    library_store[operation.book_name] = {
-      borrow_to: operation.student_name,
-      borrow_count: found_book.borrow_count + 1,
-    };
-  } else if (operation.type === "return") {
-    library_store[operation.book_name] = {
-      borrow_to: "",
-      borrow_count: found_book.borrow_count,
-    };
-  }
+//   if (operation.type === "borrow" && typeof found_book === "undefined") {
+//     console.log("Book not found");
+//   } else if (operation.type === "borrow" && found_book.borrow_to !== "") {
+//     console.log("Book already borrowed");
+//   } else if (operation.type === "borrow") {
+//     library_store[operation.book_name].borrow_to = operation.student_name;
+//     library_store[operation.book_name].borrow_count += 1;
+//   } else if (operation.type === "return") {
+//     library_store[operation.book_name].borrow_to = "";
+//   }
 
-  console.log(library_store);
-}
+//   console.log(library_store);
+// }
 
-library({
-  type: "borrow",
-  student_name: "Dilshodbek",
-  book_name: "Atomic Habits",
-});
+// library({
+//   type: "borrow",
+//   student_name: "Dilshodbek",
+//   book_name: "Atomic Habits",
+// });
 
-library({
-  type: "return",
-  student_name: "Dilshodbek",
-  book_name: "Atomic Habits",
-});
+// library({
+//   type: "return",
+//   student_name: "Dilshodbek",
+//   book_name: "Atomic Habits",
+// });
 
-library({
-  type: "borrow",
-  student_name: "Dilshodbek",
-  book_name: "Zero to One",
-});
+// library({
+//   type: "borrow",
+//   student_name: "Akhad",
+//   book_name: "Atomic Habits",
+// });

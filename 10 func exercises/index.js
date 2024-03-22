@@ -135,25 +135,38 @@
 
 // E8
 
-const restaurant = {
-  name: "Crispy",
-  menu: [
-    { item: "Crispy chicken", price: 12.0 },
-    { item: "Crispy fish", price: 10.0 },
-    { item: "Crispy potato fries", price: 8.0 },
-    { item: "cheese ball", price: 3.0 },
-    { item: "cheese stick", price: 2.0 },
-    { item: "icecream", price: 4.0 },
-  ],
-  vegan: false,
-};
+// const restaurant = {
+//   name: "Crispy",
+//   menu: [
+//     { item: "Crispy chicken", price: 12.0 },
+//     { item: "Crispy fish", price: 10.0 },
+//     { item: "Crispy potato fries", price: 8.0 },
+//     { item: "cheese ball", price: 3.0 },
+//     { item: "cheese stick", price: 2.0 },
+//     { item: "icecream", price: 4.0 },
+//   ],
+//   vegan: false,
+// };
+// function getMenu(restaurantName) {
+//   if (restaurantName === restaurant.name) console.log(restaurant.menu);
+// }
 
-function getMenu(restaurantName) {
-  if (restaurantName === restaurant.name) console.log(restaurant.menu);
-}
+// getMenu("Crispy");
 
-getMenu("Crispy");
-// console.log(getMenu("Delicious"));
+// Formatted
+
+// function getMenu(restaurantName) {
+//   if (restaurantName === restaurant.name) {
+//     let formattedMenu = "";
+//     restaurant.menu.forEach((value) => {
+//       formattedMenu += `${value.item}: $${value.price}\n`;
+//     });
+//     return formattedMenu;
+//   }
+//   return "Restaurant not found.";
+// }
+
+// console.log(getMenu("Crispy"));
 
 // E9
 
@@ -161,8 +174,8 @@ getMenu("Crispy");
 
 // function getP() {
 //   for (let i = 0; i <= word.length; i++) {
+  //     let firstOne = i;
 //     let lastOne = word.length - 1 - i;
-//     let firstOne = i;
 //     if (word[firstOne] !== word[lastOne]) return false;
 //   }
 //   return true;
@@ -172,14 +185,16 @@ getMenu("Crispy");
 
 // E10
 
-// var bank = {
-//   humo: {
-//     balance: 2000,
-//   },
-//   12345: {
-//     balance: 17000,
-//   },
-// };
+var bank = {
+  humo: {
+    balance: 2000,
+  },
+  12345: {
+    balance: 17000,
+  },
+};
+console.log(bank.balance);
+console.log(Object.entries(bank));
 
 // var keys = Object.keys(bank);
 
