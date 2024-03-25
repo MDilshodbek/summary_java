@@ -1,0 +1,11 @@
+.dastur {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.style {
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+}

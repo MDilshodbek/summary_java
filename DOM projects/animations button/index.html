@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="main">
+        <div class="left">
+          <button class="hory" onclick="myMoveTRT()">To Right Top</button>
+          <button class="hory" onclick="myMoveTRB()">To Right Bottom</button>
+        </div>
+        <div class="center">
+          <div class="cont">
+            <button onclick="myMoveTBL()">To Bottom Left</button>
+            <button onclick="myMoveTBR()">To Bottom Right</button>
+          </div>
+          <div class="myContainer">
+            <div class="myAnimation"></div>
+          </div>
+          <p class="text"></p>
+          <div class="cont">
+            <button onclick="myMoveTTL()">To Top Left</button>
+            <button onclick="myMoveTTR()">To Top Right</button>
+          </div>
+        </div>
+        <div class="right">
+          <button class="hory" onclick="myMoveTLT()">To Left Top</button>
+          <button class="hory" onclick="myMoveTLB()">To Left Bottom</button>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

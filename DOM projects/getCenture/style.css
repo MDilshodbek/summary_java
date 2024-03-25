@@ -1,0 +1,13 @@
+.dastur {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.data {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  font-size: 20px;
+  gap: 5px;
+}

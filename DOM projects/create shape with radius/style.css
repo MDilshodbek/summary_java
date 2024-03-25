@@ -1,0 +1,21 @@
+body {
+  font-family: Arial, sans-serif;
+  position: relative;
+}
+
+#canvas {
+  border: 1px solid #000;
+  width: 500px;
+  height: 500px;
+  position: relative;
+  margin-bottom: 20px;
+  display: flex;
+}
+
+.shape {
+  margin-right: 10px;
+}
+
+#Radius {
+  display: none;
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="dastur">
+      <h3>
+        Vaqt minutda va masofa kilometrda berilgan. Tezlikni m/s da hisoblovchi
+        dastur
+      </h3>
+    </div>
+    <div class="data">
+      <label for="minute">Vaqt(minutda):</label>
+      <input type="number" id="minute" />
+      <label for="kmetr">Masofa(kilometrda):</label>
+      <input type="number" id="kmetr" />
+      <button onclick="getSpeed()">Go</button>
+    </div>
+    <div id="box" class="data"></div>
+    <script src="index.js"></script>
+  </body>
+</html>
